@@ -1,0 +1,15 @@
+
+# Environment files
+.env
+
+# Editor and OS-specific files
+
+.vscode/
+
+# Optional npm cache directory
+.npm/
+
+package-lock.json
+
+# Node.js dependencies
+node_modules/
