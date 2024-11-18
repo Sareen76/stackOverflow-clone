@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 const Auth = () => {
+    const navigate = useNavigate();
     return (
         <div className="Homepage ">
-            This is auth
+            <button onClick={() => navigate('/')}>Click here to redirect to the StackOverflow-Clone</button>
         </div>
     )
 }
