@@ -16,8 +16,8 @@ const App = () => {
         {/* Layout and nested routes */}
         <Route path="/" element={<Layout />}>
           {/* Redirect to /questions by default */}
-          <Route index element={<Navigate to="questions" replace />} />
-          <Route path="questions" element={<Questions />} />
+          {/* <Route index element={<Navigate to="questions" replace />} /> */}
+          <Route  index element={<Questions />} />
           <Route path="home" element={<Home />} />
         </Route>
       </Routes>

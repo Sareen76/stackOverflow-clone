@@ -19,7 +19,7 @@ const NavbarCollapse = () => {
         <ul className={styles.NavbarList}>
 
           <li>
-            <a className={` ${getLinkStyle('/')} main ${styles.heading}`} href="/">
+            <a className={` ${getLinkStyle('/home')} main ${styles.heading}`} href="#">
             <i className="fa-solid fa-house"></i>
               <label htmlFor="home">Home</label>
             </a>
@@ -36,7 +36,7 @@ const NavbarCollapse = () => {
 
             <ul className={styles.NavbarSubList}>
               <li >
-                <a href="/questions" className={` ${getLinkStyle('/questions')} main`}>
+                <a href="/" className={` ${getLinkStyle('/')} main`}>
                   <label htmlFor="question">Questions</label>
                 </a>
               </li>  
