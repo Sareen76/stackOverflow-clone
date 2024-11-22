@@ -25,43 +25,42 @@
       @media (max-width: 768px) {
         .toggle {
           .hamburger {
-            height: 30px;
-            width: 26px;
+            height: 20px;
+            width: 18px;
             display: flex;
             flex-direction: column;
-            gap: 4px;
-
+            gap: 2px;
+        
             .line1,
             .line2,
             .line3 {
               transition: top 0.5s ease, left 0.5s ease, right 0.5s ease,
                 bottom 0.5s ease, transform 0.5s ease;
-              border: 3px solid orange;
+              border: 2px solid orange;
             }
-
+        
             .underBox {
               transition: top 0.5s ease, left 0.5s ease, right 0.5s ease,
                 bottom 0.5s ease, transform 0.5s ease;
-
               position: absolute;
-              left: 14.8px;
-              bottom: 33px;
-              height: 15px !important;
-              width: 42px;
-              border-left: 5px solid black;
-              border-bottom: 5px solid black;
-              border-right: 5px solid black;
+              left: 17.4px;
+              bottom: 42.5px;
+              height: 10px !important;
+              width: 28px;
+              border-left: 3px solid black;
+              border-bottom: 3px solid black;
+              border-right: 3px solid black;
               border-top: none;
             }
           }
-
+        
           .activehamburger {
-            height: 30px;
-            width: 26px;
+            height: 20px;
+            width: 18px;
             display: flex;
             flex-direction: column;
-            gap: 4px;
-
+            gap: 2px;
+        
             .line1,
             .line2,
             .line3,
@@ -69,55 +68,53 @@
             .line1_3 {
               transition: top 0.5s ease, left 0.5s ease, right 0.5s ease,
                 bottom 0.5s ease, transform 0.5s ease;
-
-              border: 2.73px solid orange;
+              border: 1.8px solid orange;
             }
-
+        
             .underBox {
               transition: top 0.5s ease, left 0.5s ease, right 0.5s ease,
                 bottom 0.5s ease, transform 0.5s ease;
-
               position: absolute;
-              left: 14.8px;
-              bottom: 22px;
-              height: 15px !important;
-              width: 42px;
-              border-left: 5px solid black;
-              border-bottom: 5px solid black;
-              border-right: 5px solid black;
+              left: 17.5px;
+              bottom: 36.5px;
+              height: 10px !important;
+              width: 28px;
+              border-left: 3px solid black;
+              border-bottom: 3px solid black;
+              border-right: 3px solid black;
               border-top: none;
             }
             .line1 {
-              transform: rotate(39deg) translate(3.9px, -11.5px);
+              transform: rotate(39deg) translate(2.7px, -8px);
             }
-
             .line1_2 {
-              transform: rotate(25deg) translate(3px, -5.8px);
+              transform: rotate(25deg) translate(2px, -4px);
             }
             .line1_3 {
-              transform: rotate(14deg) translate(1.9px, -1.3px);
+              transform: rotate(14deg) translate(1.3px, -0.9px);
             }
             .line2 {
-              transform: rotate(5deg) translate(0.6px, -0.1px);
+              transform: rotate(5deg) translate(0.4px, -0.1px);
             }
           }
+        
           .cross {
-            height: 30px;
-            width: 30px;
+            height: 20px;
+            width: 20px;
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 2px;
             position: relative;
             justify-content: center;
             align-items: center;
-
+        
             .line1,
             .line2 {
               transition: 0.8s ease-in-out;
-              width: 30px;
-              height: 3px;
-              border: 2.8px solid orange;
-              border-radius: 10px;
+              width: 20px;
+              height: 2px;
+              border: 2px solid orange;
+              border-radius: 6px;
               position: absolute;
             }
             .line1 {
@@ -127,10 +124,11 @@
               transform: rotate(-45deg);
             }
             .line3 {
-              transform: translateY(-4px);
+              transform: translateY(-3px);
             }
           }
         }
+        
       }
 
       img {

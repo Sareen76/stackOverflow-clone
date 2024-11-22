@@ -13,7 +13,7 @@ import { useOutletContext } from 'react-router-dom';
 
 
 const Questions = () => {
-  const [isActive, setIsActive] = useState(localStorage.getItem("isActive") || "creation");
+  const [isActive, setIsActive] = useState(localStorage.getItem("isActive") || "Votes");
   const [question, setQuestion] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

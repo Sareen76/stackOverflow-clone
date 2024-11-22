@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Auth from './pages/Auth';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
@@ -9,12 +9,16 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Auth and fallback routes */}
         <Route path="auth" element={<Auth />} />
         <Route path="*" element={<Auth />} />
 
+        {/* Layout and nested routes */}
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          {/* Redirect to /questions by default */}
+          <Route index element={<Navigate to="questions" replace />} />
           <Route path="questions" element={<Questions />} />
+          <Route path="home" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
