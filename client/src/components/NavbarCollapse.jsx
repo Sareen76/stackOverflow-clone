@@ -21,7 +21,7 @@ const NavbarCollapse = () => {
           <li>
             <a className={` ${getLinkStyle('/')} main ${styles.heading}`} href="/">
             <i className="fa-solid fa-house"></i>
-              <label htmlFor="home">HOME</label>
+              <label htmlFor="home">Home</label>
             </a>
             <ul className={styles.NavbarSubList}>
               {/* No list */}
@@ -41,12 +41,12 @@ const NavbarCollapse = () => {
                 </a>
               </li>  
               <li >
-                <a href="/tags" className={` ${getLinkStyle('/tags')} main`}>
+                <a href="#" className={` ${getLinkStyle('/tags')} main`}>
                   <label htmlFor="tags">Tags</label>
                 </a>
               </li>
               <li>
-                <a href="/users" className={` ${getLinkStyle('/users')} main`}>
+                <a href="#" className={` ${getLinkStyle('/users')} main`}>
                   <label htmlFor="users">Users</label>
                 </a>
               </li>
@@ -60,7 +60,7 @@ const NavbarCollapse = () => {
             </a>
             <ul className={styles.NavbarSubList}>
               <li>
-                <a href="/exploreJobs" className={` ${getLinkStyle('/exploreJobs')} main`}>
+                <a href="#" className={` ${getLinkStyle('/exploreJobs')} main`}>
                   <label htmlFor="exploreJobs">Explore Jobs</label>
                 </a>
               </li>
@@ -74,12 +74,12 @@ const NavbarCollapse = () => {
             </a>
             <ul className={styles.NavbarSubList}>
               <li>
-                <a href="/jobs" className={` ${getLinkStyle('/jobs')} main`}>
+                <a href="#" className={` ${getLinkStyle('/jobs')} main`}>
                   <label htmlFor="jobs">Jobs</label>
                 </a>
               </li>
               <li>
-                <a href="/companies" className={` ${getLinkStyle('/companies')} main`}>
+                <a href="#" className={` ${getLinkStyle('/companies')} main`}>
                   <label htmlFor="companies">Companies</label>
                 </a>
               </li>
@@ -93,7 +93,7 @@ const NavbarCollapse = () => {
             </a>
             <ul className={styles.NavbarSubList}>
               <li>
-                <a href="/createTeam" className={` ${getLinkStyle('/createTeam')} main`}>
+                <a href="/#" className={` ${getLinkStyle('/createTeam')} main`}>
                   <label htmlFor="createTeam">+ Create a Team</label>
                 </a>
               </li>

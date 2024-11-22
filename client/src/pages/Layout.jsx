@@ -7,24 +7,28 @@ import NavbarCollapse from "../components/NavbarCollapse";
 import { Outlet } from "react-router-dom";
 
 import { useToggle } from '../context/context.jsx';
+import { useState } from "react";
 
 
 const Layout = () => {
 const { toggleMode, toggle } = useToggle();
+const [search, setSearch] = useState("");
+const [isSearch, setIsSearch] = useState(false);
+
 
 return (
     <div className="main">
         <div className="Navbar">
-            <Navbar />
+            <Navbar setSearch={setSearch} setIsSearch={setIsSearch}/>
         </div>
         <div className={styles.container}>
             <div className={`${styles.NavbarCollapse} ${toggleMode ? styles.visible : ""}`}>
                 <NavbarCollapse />
             </div>
             <div className="Feed">
-                <Outlet />
+                <Outlet context={{search, isSearch, setIsSearch}}/>
             </div>
-            <div className="Blo">
+            <div className="Blog">
                 <Blog />
             </div>
         </div>

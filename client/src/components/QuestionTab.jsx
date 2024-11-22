@@ -9,14 +9,14 @@ const QuestionTab = ({isActive, setIsActive}) => {
     return (
         <div className={styles.questionTab}>
             <div className={styles.container}>
-                <h1 className='heading'>
+                <h1 className={styles.heading}>
                     Top Question
                 </h1>
 
                 <div className={styles.typeSelection}>
                     <ul className={styles.typeList}>
-                        <li><a className={`${isActive == 'interesting' ? styles.active : ""}`} id='interesting' onClick={() => setActive('interesting')}>Interesting</a></li>
-                        <li><a className={`${isActive == 'bountled' ? styles.active : ""}`} id='bountled' onClick={() => setActive('bountled')}>Bountled</a></li>
+                        <li><a className={`${isActive == 'Votes' ? styles.active : ""}`} id='interesting' onClick={() => setActive('Votes')}>Interesting</a></li>
+                        <li><a className={`${isActive == 'Bounties' ? styles.active : ""}`} id='Bounties' onClick={() => setActive('Bounties')}>Bountied</a></li>
                         <li><a className={`${isActive == 'hot' ? styles.active : ""}`} id='hot' onClick={() => setActive('hot')}>Hot</a></li>
                         <li><a className={`${isActive == 'week' ? styles.active : ""}`} id='week' onClick={() => setActive('week')}>Week</a></li>
                         <li><a className={`${isActive == 'month' ? styles.active : ""}`} id='month' onClick={() => setActive('month')}>Month</a></li>
